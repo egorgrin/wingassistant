@@ -1,0 +1,63 @@
+@import 'cssdrop';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+$color-main: #ff7600;
+$color-text-dark: #000;
+$color-text-header: #2B2350;
+$color-text-blue-gray: #7085A6;
+$color-text-violet-gray: #797687;
+
+$color-btn-bg: #004fcf;
+$color-nav: #02303575;
+$btn-radius: 3px;
+
+:root {
+  font-size: 10px;
+}
+
+html,
+body {
+  font-size: 1.6rem;
+  color: $color-text-dark;
+  font-family: 'Poppins', sans-serif;
+}
+
+p,
+li {
+  line-height: 2.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+body {
+  // position: relative;
+}
+
+/* --Breakpoints-- */
+
+$small-screen: 575px;
+$medium-screen: 767px;
+$large-screen: 991px;
+// $xlarge-screen: 1199px;
+
+@mixin screen($point) {
+  @if $point == small {
+    @media (max-width: $small-screen) {
+      @content;
+    }
+  } @else if $point == medium {
+    @media (max-width: $medium-screen) {
+      @content;
+    }
+  } @else if $point == large {
+    @media (max-width: $large-screen) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "yaper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:browser-sync": "browser-sync start --proxy \"http://localhost/\" --files \"**/*.php, **/*.css, **/*.html\" --port 3005",
+
+    "sass:watch": "sass --watch assets/scss/index.scss:assets/css/index.css --no-source-map"
+  },
+  "author": "",
+  "license": "ISC"
+}
