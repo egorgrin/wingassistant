@@ -1,0 +1,19 @@
+@import 'settings';
+@import 'elements';
+
+
+/* Sections */
+
+@import './sections/header';
+@import './sections/hero';
+@import './sections/advantages';
+@import './sections/presentation';
+@import './sections/form';
+@import './sections/footer';
+
+/* Pages */
+
+@import './pages/global';
+@import './pages/home';
+@import './pages/contact';
+@import './pages/quote';

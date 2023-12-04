@@ -1,9 +1,9 @@
 const header = document.querySelector('header');
 const mobileNav = document.querySelector('.mobile_nav');
 const mobileNavBody = document.querySelector('.mobile_nav_body');
-const burgerBtn = document.querySelector('.hamb');
+const burgerBtn = document.querySelector('.hamburger');
 
-function toggleMenu() {
+/*function toggleMenu() {
   const headerHeight = header.getBoundingClientRect().height.toFixed(1);
   const mobileNavHeight = mobileNav.scrollHeight.toFixed(1);
 
@@ -27,7 +27,7 @@ function toggleMenu() {
   }
 }
 
-burgerBtn.addEventListener('click', toggleMenu);
+burgerBtn.addEventListener('click', toggleMenu);*/
 
 const contactBtn = document.querySelector('.contact_page .btn');
 
@@ -46,6 +46,7 @@ function smoothScrollToForm(e) {
     behavior: 'smooth',
   });
 }
+
 let isContactPage = document.querySelector('.contact_page');
 
 if (isContactPage) {

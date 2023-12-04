@@ -1,0 +1,121 @@
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 5.8rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+
+  padding: 0 30px;
+  margin: 0 auto;
+
+  @include screen(large) {
+    padding: 0 20px;
+  }
+}
+
+.btn {
+  line-height: 1;
+  padding: 16px;
+  background-color: $color-btn-bg;
+  border-radius: $btn-radius;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  transition: background 0.4s ease;
+
+  &:hover,
+  &:focus {
+    background-color: $color-btn-bg-hover;
+  }
+}
+
+.btn_gradient {
+  border-radius: 4px;
+  background: linear-gradient(
+                  90deg,
+                  rgba(30, 167, 229, 1) 0%,
+                  rgba(35, 103, 206, 1) 50%,
+                  rgba(31, 154, 224, 1) 100%
+  ), 0;
+  background-size: 200% 100%;
+  transition: background-position 0.4s ease;
+
+  &:hover,
+  &:focus {
+    background-position: 100%;
+    transition: background-position 0.4s ease;
+  }
+}
+
+.hamburger {
+  cursor: pointer;
+  flex-direction: column;
+
+  span {
+    position: relative;
+    display: block;
+
+    top: 0;
+    width: 24px;
+    height: 2px;
+
+    background: #000;
+    //border-radius: 0px;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+/* --Breakpoints-- */
+
+$x-small-screen: 424px;
+$small-screen: 570px;
+$medium-screen: 767px;
+$large-screen: 991px;
+$x-large-screen: 1024px;
+
+@mixin screen($width) {
+  @if $width == x-small {
+    @media (max-width: $x-small-screen) {
+      @content;
+    }
+  }
+  @else if $width == small {
+    @media (max-width: $small-screen) {
+      @content;
+    }
+  } @else if $width == medium {
+    @media (max-width: $medium-screen) {
+      @content;
+    }
+  } @else if $width == large {
+    @media (max-width: $large-screen) {
+      @content;
+    }
+  }@else if $width == x-large {
+    @media (max-width: $x-large-screen) {
+      @content;
+    }
+  }
+}

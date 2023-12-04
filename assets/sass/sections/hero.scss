@@ -1,0 +1,68 @@
+.hero_wrapper {
+  background: $color-bg-main;
+
+  .hero.presentation {
+    padding-top: 100px;
+    padding-bottom: 0;
+
+    gap: 20px;
+
+    @include screen(large) {
+      align-items: flex-end;
+
+      padding-bottom: 50px;
+    }
+    @include screen(medium) {
+      align-items: center;
+    }
+
+    .text,
+    .image {
+      min-height: 80vh;
+
+      @include screen(large) {
+        min-height: auto;
+      }
+    }
+
+    .text {
+      flex-basis: 54%;
+    }
+    .image {
+      flex-basis: 46%;
+    }
+
+    .text {
+      padding-top: 0;
+
+      h1 {
+        line-height: 1.1;
+        margin-bottom: 20px;
+
+        @include screen(large) {
+          font-size: 3.0rem;
+        }
+      }
+
+      p {
+        font-size: 1.8rem;
+      }
+
+      .btn {
+        width: 50%;
+        margin-bottom: 30px;
+      }
+
+      .rating {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: $color-text-violet-gray;
+
+        i {
+          color: #FFAC33;
+        }
+      }
+    }
+  }
+}
+

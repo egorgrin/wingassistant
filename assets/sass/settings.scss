@@ -1,0 +1,84 @@
+@import 'cssdrop';
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+
+/* Variables */
+
+$color-main: #4067F0;
+$color-bg-main: #EFEEFE;
+$color-text-dark: #2D3649;
+$color-text-header: #2B2350;
+$color-text-blue-gray: #7085A6;
+$color-text-violet-gray: #797687;
+
+$color-btn-bg: #289EFD;
+$color-btn-bg-hover: #D64933;
+
+$btn-radius: 10px;
+
+
+$font-main: 'Sora', sans-serif;
+$font-secondary: 'Poppins', sans-serif;
+
+/* Preset */
+
+html {
+  font-size: 10px;
+}
+
+html,
+body {
+  color: $color-text-dark;
+  font-family: $font-main;
+}
+
+p,
+li {
+  line-height: 2.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: $font-main
+}
+a {
+  font-family: $font-secondary
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+body {
+  // position: relative;
+}
+
+/* --Breakpoints-- */
+
+$small-screen: 575px;
+$medium-screen: 767px;
+$large-screen: 991px;
+// $xlarge-screen: 1199px;
+
+@mixin screen($point) {
+  @if $point == small {
+    @media (max-width: $small-screen) {
+      @content;
+    }
+  } @else if $point == medium {
+    @media (max-width: $medium-screen) {
+      @content;
+    }
+  } @else if $point == large {
+    @media (max-width: $large-screen) {
+      @content;
+    }
+  }
+}

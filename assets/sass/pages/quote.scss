@@ -1,0 +1,18 @@
+.quote_page {
+  .presentation {
+    padding-bottom: 0;
+  }
+  .form_wrapper {
+    background-color: #fff;
+  }
+  .form {
+    form {
+      max-width: none;
+      padding: 0 6rem;
+      input,
+      textarea {
+        background-color: #f0f0f0;
+      }
+    }
+  }
+}

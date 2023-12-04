@@ -26,7 +26,7 @@
       </div>
     </section>
     <section class="presentation_wrapper">
-      <div class="presentation pr_bg pr_noimg container">
+      <div class="presentation pr_bg pr_no_img container">
         <div class="text">
           <div>
             <h2>About Avior Financials: Empowering Your Financial Success
