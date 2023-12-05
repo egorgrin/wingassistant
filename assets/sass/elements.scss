@@ -40,7 +40,7 @@ h3 {
   font-weight: 400;
   color: #fff;
   text-align: center;
-  transition: background 0.4s ease;
+  transition: all .4s ease;
 
   &:hover,
   &:focus {
@@ -87,35 +87,4 @@ h3 {
   }
 }
 
-/* --Breakpoints-- */
 
-$x-small-screen: 424px;
-$small-screen: 570px;
-$medium-screen: 767px;
-$large-screen: 991px;
-$x-large-screen: 1024px;
-
-@mixin screen($width) {
-  @if $width == x-small {
-    @media (max-width: $x-small-screen) {
-      @content;
-    }
-  }
-  @else if $width == small {
-    @media (max-width: $small-screen) {
-      @content;
-    }
-  } @else if $width == medium {
-    @media (max-width: $medium-screen) {
-      @content;
-    }
-  } @else if $width == large {
-    @media (max-width: $large-screen) {
-      @content;
-    }
-  }@else if $width == x-large {
-    @media (max-width: $x-large-screen) {
-      @content;
-    }
-  }
-}

@@ -1,0 +1,74 @@
+.tasks_wrapper {
+  padding: 100px 0;
+
+  @include screen(small) {
+    padding: 70px 0;
+  }
+
+  .tasks {
+    .title {
+      text-align: center;
+      margin-bottom: 60px;
+
+      @include screen(medium) {
+        font-size: 2.8rem;
+        margin-bottom: 40px;
+      }
+    }
+
+    .items {
+      display: grid;
+      grid-template-columns: repeat(2, 47%);
+
+      row-gap: 40px;
+      justify-content: space-between;
+
+      @include screen(x-large) {
+        grid-template-columns: 100%;
+        justify-content: center;
+      }
+
+      .item {
+        display: flex;
+
+        @include screen(x-large) {
+          max-width: 70%;
+          justify-self: center;
+        }
+
+        @include screen(medium) {
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+          .text {
+            text-align: center;
+          }
+        }
+
+        @include screen(small) {
+          max-width: 100%;
+        }
+
+        .img {
+          width: 80px;
+          margin-right: 20px;
+          flex-shrink: 0;
+        }
+
+        .text {
+          .subtitle {
+            font-weight: 600;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+          }
+
+          p {
+            font-size: 1.5rem;
+            color: $color-text-dark;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

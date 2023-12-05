@@ -62,22 +62,32 @@ body {
 
 /* --Breakpoints-- */
 
-$small-screen: 575px;
+$x-small-screen: 424px;
+$small-screen: 570px;
 $medium-screen: 767px;
 $large-screen: 991px;
-// $xlarge-screen: 1199px;
+$x-large-screen: 1024px;
 
-@mixin screen($point) {
-  @if $point == small {
+@mixin screen($width) {
+  @if $width == x-small {
+    @media (max-width: $x-small-screen) {
+      @content;
+    }
+  }
+  @else if $width == small {
     @media (max-width: $small-screen) {
       @content;
     }
-  } @else if $point == medium {
+  } @else if $width == medium {
     @media (max-width: $medium-screen) {
       @content;
     }
-  } @else if $point == large {
+  } @else if $width == large {
     @media (max-width: $large-screen) {
+      @content;
+    }
+  }@else if $width == x-large {
+    @media (max-width: $x-large-screen) {
       @content;
     }
   }

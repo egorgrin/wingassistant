@@ -2,7 +2,7 @@
   <div class="footer container">
     <div class="logo_wrapper">
       <a href="/" class="logo">
-        <img src="/assets/img/logo.svg" alt="">
+        <img src="/assets/img/logo.webp" alt="">
       </a>
     </div>
     <div class="links">

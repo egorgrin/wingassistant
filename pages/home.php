@@ -35,60 +35,65 @@
       </div>
     </div>
   </section>
-  <section class="adv_wrapper">
-    <div class="adv container">
-      <div class="title">
-        <h2>Experience the Avior Financials advantage
-        </h2>
-      </div>
+
+  <section class="tasks_wrapper">
+    <div class="tasks container">
+      <h2 class="title">What can Social Typhon do?</h2>
       <div class="items">
         <div class="item">
-          <div class="img_container">
-            <img src="/assets/img/advant1.svg" alt="">
+          <div class="img">
+            <img src="/assets/img/tasks/t0.webp" alt="">
           </div>
-          <h3>Expertise</h3>
-          <p>Our team of seasoned professionals brings extensive experience in financial management to ensure accuracy
-            and compliance.</p>
+          <div class="text">
+            <div class="subtitle">Content creation and scheduling
+            </div>
+            <p>Captivating visuals, engaging captions, and trend-savvy content designed to match with your audience. </p>
+          </div>
         </div>
         <div class="item">
-          <div class="img_container">
-            <img src="/assets/img/advant2.svg" alt="">
+          <div class="img">
+            <img src="/assets/img/tasks/t1.webp" alt="">
           </div>
-          <h3>Customized Solutions</h3>
-          <p>We understand that every business is unique. Our solutions are tailored to meet your specific needs,
-            providing a personalized approach to financial management.</p>
+          <div class="text">
+            <div class="subtitle">Reel and Video Production:
+            </div>
+            <p>Elevate your social media game with dynamic reels and videos. From concept to execution, we bring your brand to life through visually stunning and shareable content.
+            </p>
+          </div>
         </div>
         <div class="item">
-          <div class="img_container">
-            <img src="/assets/img/advant3.svg" alt="">
+          <div class="img">
+            <img src="/assets/img/tasks/t2.webp" alt="">
           </div>
-          <h3>Reliability</h3>
-          <p>Trust is at the core of our relationships. We pride ourselves on delivering reliable and timely services,
-            allowing you to focus on your business with peace of mind.</p>
+          <div class="text">
+            <div class="subtitle">Influencer Collaboration:
+            </div>
+            <p>Establish meaningful connections with influencers in your industry. We identify, approach, and manage influencer partnerships that align with your brand, expanding your reach and credibility.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="/assets/img/tasks/t3.webp" alt="">
+          </div>
+          <div class="text">
+            <div class="subtitle">Analytics and Reporting:
+            </div>
+            <p>Gain valuable insights into your social media performance, allowing you to make informed decisions and optimize your social media strategy.
+            </p>
+          </div>
+        </div><div class="item">
+          <div class="img">
+            <img src="/assets/img/tasks/t4.webp" alt="">
+          </div>
+          <div class="text">
+            <div class="subtitle">Community Management:
+            </div>
+            <p>Build a loyal and engaged community around your brand, addressing customer inquiries, and creating a positive online environment that strengthens your brand reputation.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="presentation_wrapper">
-    <div class="presentation pr_rtl container">
-      <div class="image">
-        <img src="/assets/img/about.svg" alt="">
-      </div>
-      <div class="text">
-        <h2>Tailored for Growth
-        </h2>
-        <p>Our services are not just about managing your finances; they are crafted to be a catalyst for your business
-          growth. We work with you to develop strategies that align with your goals, ensuring that our financial
-          solutions contribute directly to your success.</p>
-        <a href="/services" class="btn btn_gradient">How we can help</a>
-      </div>
-    </div>
-  </section>
-    <?php
-    $heading = "Ready to Transform Your Financial Back Office?";
-    $paragraph = "Contact Avior Financials today to discuss how our expert financial services can benefit your business.
-      Whether you're a small startup or a growing enterprise, we have the solutions to take your financial
-      management to the next level.";
-    include CHUNKS . '/form.php'
-    ?>
 </main>
