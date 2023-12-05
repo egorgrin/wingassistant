@@ -1,0 +1,20 @@
+.hamburger {
+  cursor: pointer;
+  flex-direction: column;
+
+  span {
+    position: relative;
+    display: block;
+
+    top: 0;
+    width: 24px;
+    height: 2px;
+
+    background: #000;
+    //border-radius: 0px;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.btn {
+  line-height: 1;
+  padding: 16px;
+  background-color: $color-btn-bg;
+  border-radius: $btn-radius;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  transition: all .4s ease;
+
+  &:hover,
+  &:focus {
+    background-color: $color-btn-bg-hover;
+  }
+}
+
+.btn_gradient {
+  border-radius: 4px;
+  background: linear-gradient(
+                  90deg,
+                  rgba(30, 167, 229, 1) 0%,
+                  rgba(35, 103, 206, 1) 50%,
+                  rgba(31, 154, 224, 1) 100%
+  ), 0;
+  background-size: 200% 100%;
+  transition: background-position 0.4s ease;
+
+  &:hover,
+  &:focus {
+    background-position: 100%;
+    transition: background-position 0.4s ease;
+  }
+}

@@ -91,9 +91,8 @@ h6 {
   font-weight: inherit;
 }
 
-/* Fonts */
-/* Variables */
-/* Preset */
+/* --Breakpoints-- */
+/* Presets */
 html {
   font-size: 10px;
 }
@@ -102,6 +101,24 @@ html,
 body {
   color: #2D3649;
   font-family: "Sora", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 5.8rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+h3 {
+  font-size: 22px;
 }
 
 p,
@@ -120,25 +137,6 @@ img {
   width: 100%;
   object-fit: cover;
   object-position: center;
-}
-
-/* --Breakpoints-- */
-h1,
-h2,
-h3 {
-  font-weight: 700;
-}
-
-h1 {
-  font-size: 5.8rem;
-}
-
-h2 {
-  font-size: 4.2rem;
-}
-
-h3 {
-  font-size: 22px;
 }
 
 .hidden {
@@ -340,7 +338,6 @@ header .header .btn:hover, header .header .btn:focus {
 
 .presentation {
   display: flex;
-  align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
   gap: 5%;
@@ -366,7 +363,6 @@ header .header .btn:hover, header .header .btn:focus {
 .presentation .image {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   flex-basis: 50%;
 }
 @media (max-width: 767px) {
@@ -374,9 +370,6 @@ header .header .btn:hover, header .header .btn:focus {
   .presentation .image {
     flex-basis: auto;
   }
-}
-.presentation .text {
-  padding-top: 100px;
 }
 @media (max-width: 767px) {
   .presentation .text {
@@ -558,7 +551,7 @@ footer .footer .links a {
   color: #4067F0;
 }
 .contact_page .presentation.pr_bg {
-  background-image: url("../img/contact_pr_bg.webp");
+  background-image: url("./img/contact_pr_bg.webp");
   background-position: 10% 0%;
   background-repeat: no-repeat;
 }

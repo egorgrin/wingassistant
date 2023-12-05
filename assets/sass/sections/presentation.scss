@@ -1,6 +1,6 @@
 .presentation {
   display: flex;
-  align-items: center;
+  //align-items: center;
 
   padding-top: 50px;
   padding-bottom: 50px;
@@ -27,7 +27,7 @@
   .image {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    //justify-content: center;
     flex-basis: 50%;
 
     @include screen(medium) {
@@ -36,7 +36,7 @@
   }
 
   .text {
-    padding-top: 100px;
+    //padding-top: 100px;
 
     @include screen(medium) {
       order: 1;

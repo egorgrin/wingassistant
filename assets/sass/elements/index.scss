@@ -1,0 +1,21 @@
+.hidden {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+
+  padding: 0 30px;
+  margin: 0 auto;
+
+  @include screen(large) {
+    padding: 0 20px;
+  }
+}
+
+@import "buttons";
+@import "hamburger";
+@import "accordion";
+
+

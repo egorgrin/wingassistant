@@ -1,0 +1,51 @@
+@import 'cssdrop';
+@import 'mixins';
+@import 'fonts';
+@import 'variables';
+
+/* Presets */
+
+html {
+  font-size: 10px;
+}
+
+html,
+body {
+  color: $color-text-dark;
+  font-family: $font-main;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 5.8rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+p,
+li {
+  line-height: 2.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: $font-main
+}
+a {
+  font-family: $font-secondary
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}

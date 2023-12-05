@@ -31,7 +31,7 @@
 
       </div>
       <div class="image">
-        <img src="/assets/img/hero.webp" alt="">
+        <img src="/assets/img/home/hero.webp" alt="">
       </div>
     </div>
   </section>
@@ -93,6 +93,19 @@
             </p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="presentation_wrapper">
+    <div class="presentation container">
+      <div class="image">
+        <img src="/assets/img/home/home_pr.webp" alt="">
+      </div>
+      <div class="text">
+        <h2>Lorem ipsum.</h2>
+        <p>lorem</p>
+        <a href="/services" class="btn btn_gradient">Lorem ipsum.</a>
       </div>
     </div>
   </section>
