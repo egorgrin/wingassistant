@@ -1,0 +1,53 @@
+.presentation_wrapper {
+  .presentation_title {
+    text-align: center;
+  }
+
+  .presentation {
+    gap: 0;
+
+    @include screen($medium) {
+      gap: 60px;
+    }
+
+    .image {
+
+    }
+
+    .text {
+      text-align: left;
+      padding-left: 50px;
+
+      @include screen($medium) {
+        padding-left: 0px;
+      }
+
+      .accordion {
+        @include screen($medium) {
+          width: 100%;
+        }
+
+        .element {
+          margin-bottom: 20px;
+          border: 1px solid #E1E5EE;
+          border-radius: 10px 10px 10px 10px;
+          box-shadow: 1px 1px 15px -5px rgba(0, 0, 0, 0.19);
+          padding: 20px 30px 20px 40px;
+
+          transition: box-shadow .4s ease;
+
+          &.expanded {
+            box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.17);
+          }
+
+          .title {
+            h2 {
+              font-size: 1.6rem;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}

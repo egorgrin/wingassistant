@@ -32,7 +32,7 @@
       }
     }
   }
-  @include screen(large) {
+  @include screen($large) {
     .about {
       flex-direction: column;
       align-items: center;
@@ -56,7 +56,7 @@
       }
     }
   }
-  @include screen(medium) {
+  @include screen($medium) {
     .about {
       .left {
         margin-bottom: 40px;

@@ -7,12 +7,12 @@
 
     gap: 20px;
 
-    @include screen(large) {
+    @include screen($large) {
       align-items: flex-end;
 
       padding-bottom: 50px;
     }
-    @include screen(medium) {
+    @include screen($medium) {
       align-items: center;
     }
 
@@ -20,7 +20,7 @@
     .image {
       min-height: 80vh;
 
-      @include screen(large) {
+      @include screen($large) {
         min-height: auto;
       }
     }
@@ -33,13 +33,14 @@
     }
 
     .text {
-      padding-top: 0;
+      padding-top: 90px;
+
 
       h1 {
         line-height: 1.1;
         margin-bottom: 20px;
 
-        @include screen(large) {
+        @include screen($large) {
           font-size: 3.0rem;
         }
       }

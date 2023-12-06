@@ -1,7 +1,7 @@
 .tasks_wrapper {
-  padding: 100px 0;
+  padding: 100px 0 70px;
 
-  @include screen(small) {
+  @include screen($small) {
     padding: 70px 0;
   }
 
@@ -10,7 +10,7 @@
       text-align: center;
       margin-bottom: 60px;
 
-      @include screen(medium) {
+      @include screen($medium) {
         font-size: 2.8rem;
         margin-bottom: 40px;
       }
@@ -23,7 +23,7 @@
       row-gap: 40px;
       justify-content: space-between;
 
-      @include screen(x-large) {
+      @include screen($x-large) {
         grid-template-columns: 100%;
         justify-content: center;
       }
@@ -31,12 +31,12 @@
       .item {
         display: flex;
 
-        @include screen(x-large) {
+        @include screen($x-large) {
           max-width: 70%;
           justify-self: center;
         }
 
-        @include screen(medium) {
+        @include screen($medium) {
           flex-direction: column;
           align-items: center;
           gap: 20px;
@@ -45,7 +45,7 @@
           }
         }
 
-        @include screen(small) {
+        @include screen($small) {
           max-width: 100%;
         }
 
@@ -64,7 +64,7 @@
 
           p {
             font-size: 1.5rem;
-            color: $color-text-dark;
+            color: $color-dark;
             font-weight: 400;
           }
         }

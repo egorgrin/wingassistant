@@ -9,6 +9,8 @@ header {
   left: 0;
   z-index: 99;
 
+  transition: background .4s ease;
+
   //border-bottom: 1px solid #0000001a;
   // box-shadow: rgba(53, 80, 128, 0.2) 0px 0px 10px 1px;
 
@@ -35,7 +37,7 @@ header {
       flex-grow: 1;
       height: 100%;
 
-      @include screen(medium) {
+      @include screen($medium) {
         display: none;
       }
 
@@ -73,11 +75,13 @@ header {
       padding: 7px 24px;
 
       background-color: #fff;
-      color: $color-main;
+      color: $color-btn-bg;
+
+      border-radius: 4px;
 
       line-height: 2.8rem;
       font-weight: 600;
-      font-size: 1.3rem;
+      font-size: 1.6rem;
       text-transform: uppercase;
 
       &:hover,
@@ -88,7 +92,21 @@ header {
     }
   }
 
-  @include screen(medium) {
+  &.floating {
+    background: #ffffff;
+
+    .header .btn {
+      color: #fff;
+      background: $color-btn-bg;
+
+      &:hover,
+      &:focus {
+        background-color: $color-btn-bg-hover;
+      }
+    }
+  }
+
+  @include screen($medium) {
     .hamburger {
       display: flex;
 

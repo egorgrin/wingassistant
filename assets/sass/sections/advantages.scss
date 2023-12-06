@@ -39,7 +39,7 @@
       }
     }
   }
-  @include screen(medium) {
+  @include screen($medium) {
     .adv {
       h2 {
         margin-bottom: 60px;

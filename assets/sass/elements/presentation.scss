@@ -1,0 +1,67 @@
+.presentation {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 5%;
+
+  @include screen($medium) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text,
+  .image {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+
+    @include screen($medium) {
+      flex-basis: auto;
+      width: 70%;
+    }
+
+    @include screen($small) {
+      width: 80%;
+    }
+    @include screen($x-small) {
+      width: 100%;
+    }
+  }
+
+  .text {
+    @include screen($medium) {
+      order: 1;
+
+      align-items: center;
+      text-align: center;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      list-style: disc;
+      margin-bottom: 1rem;
+    }
+
+    p,
+    ul {
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      font-size: 15px;
+    }
+  }
+
+  .image {
+    display: flex;
+    align-items: center;
+
+    & img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

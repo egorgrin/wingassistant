@@ -1,8 +1,8 @@
 .form_wrapper {
   padding: 80px 0;
   background-color: #c4d6ff;
-  color: $color-text-dark;
-  @include screen(small) {
+  color: $color-dark;
+  @include screen($small) {
     padding: 40px 0;
   }
   .form {
@@ -35,7 +35,7 @@
         font-size: 14px;
         background-color: #fff;
         padding: 16px;
-        color: $color-text-dark;
+        color: $color-dark;
         &::placeholder {
           color: #859598;
           font-size: 14px;
@@ -79,7 +79,7 @@
       }
     }
   }
-  @include screen(medium) {
+  @include screen($medium) {
     .form {
       form {
         .fields {
