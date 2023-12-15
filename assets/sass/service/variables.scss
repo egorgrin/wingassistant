@@ -1,18 +1,25 @@
 $color-main: #4067F0;
-$color-bg-main: #EFEEFE;
+$color-bg-main: #EEEEFB;
 $color-copyright: #374052;
 
-$color-dark: #2D3649;
+$color-dark-headings: #19191d;
 
 $color-text-header: #2B2350;
-$color-text-footer: #90A1B5;
 $color-text-blue-gray: #7085A6;
 $color-text-violet-gray: #797687;
 
-$color-btn-bg: #289EFD;
-$color-btn-bg-hover: #D64933;
+$color-btn-bg: #FF382A;
+$color-btn-bg-hover: transparent;
+$color-btn-border-hover: #C3C3CF;
 
 $btn-radius: 10px;
 
-$font-main: 'Sora', sans-serif;
-$font-secondary: 'Poppins', sans-serif;
+$font-main: 'Inter', sans-serif;
+$font-secondary: 'Inter', sans-serif;
+
+
+$color-text-main: #747476;
+$color-text-footer: #b7b7ba;;
+
+$color-bg-accordion: #FFF3F2;
+

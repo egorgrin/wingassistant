@@ -1,0 +1,30 @@
+.accordion {
+  @include screen($medium) {
+    width: 100%;
+  }
+
+  .element {
+    margin-bottom: 20px;
+    border: 1px solid #E1E5EE;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 15px -5px rgba(0, 0, 0, 0.19);
+    padding: 30px 40px;
+
+    @include screen($medium) {
+      padding: 40px 30px;
+    }
+
+    transition: box-shadow .4s ease;
+
+    &.expanded {
+      box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.17);
+    }
+
+    .title {
+      h2 {
+        font-size: 1.6rem;
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -1,77 +1,112 @@
-.accordion {
-  h2 {
-    font-size: 1.6rem;
+.accordion_wrapper {
+  padding: 60px 0 140px;
+
+  @include screen($medium) {
+    padding: 60px 0;
   }
 
-  p {
-    margin-bottom: 2rem;
+  .container {
+    max-width: 1024px;
 
-    font-size: 1.5rem;
-  }
-
-  a {
-    font-size: 1.5rem;
-    color: rgba(108, 130, 169, 0.85);
-    text-decoration: underline;
-
-    &:hover {
-      color: rgba(108, 130, 169, 1);
+    @include screen($large) {
+      padding: 0 10px;
     }
   }
 
-  .element {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 0;
+  .accordion {
+    a {
+      font-size: 1.5rem;
+      color: rgba(108, 130, 169, 0.85);
+      text-decoration: underline;
 
-/*    border-top: 0.1rem solid rgba(53, 80, 128, 0.08);
-    border-bottom: 0.1rem solid rgba(53, 80, 128, 0.08);*/
-
-    .title {
-      position: relative;
-      display: flex;
-      align-items: center;
-
-      .icon {
-        width: 26px;
-        height: 26px;
-
-        margin-right: 1rem;
+      &:hover {
+        color: rgba(108, 130, 169, 1);
       }
+    }
 
-      .expand_btn {
-        margin-left: auto;
-        //transition: scaleY .2s ease;
+    .accordion_title {
+      text-align: center;
+      margin-bottom: 110px;
 
-        /*.arr {
-          height: 0.6rem;
-          pointer-events: none;
-        }*/
+      h2 {
+        font-size: 3.4rem;
+      }
+    }
 
-        .arrow {
+    .element {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      background: white;
 
+      .title {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        @include screen($medium) {
+          text-align: center;
+          justify-content: center;
+        }
+
+        h2 {
+          font-size: 2.4rem;
+          font-weight: 700;
+
+          @include screen($small) {
+            font-size: 2rem;
+          }
+        }
+
+        .icon {
+          width: 26px;
+          height: 26px;
+
+          margin-right: 1rem;
+        }
+
+        .expand_btn {
+          margin-left: auto;
+
+          @include screen($medium) {
+            display: none;
+          }
+        }
+
+        & svg {
+          fill: $color-main;
         }
       }
 
-      & svg {
-        fill: $color-main;
+      .image_wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+
+        .image {
+          max-width: 200px;
+        }
       }
-    }
 
-    .accordion_content {
-      display: none;
-      overflow: hidden;
-      max-height: 0;
+      .accordion_content {
+        display: none;
+        overflow: hidden;
+        max-height: 0;
 
-      transition: max-height .4s ease, margin 0.4s ease;
+        transition: max-height .4s ease, margin 0.4s ease;
 
-      & img {
-        max-width: 85%;
 
-        border: 2px solid rgb(53, 80, 128);
-        border-radius: $btn-radius;
-        box-shadow: rgb(53, 80, 128) 0px 6px 0px 0px;
+        p {
+          text-align: center;
+          font-size: 1.7rem;
+          font-weight: 400;
+          color: $color-text-main;
+          padding: 0 5%;
+
+          @include screen($medium) {
+            padding: 0;
+          }
+        }
       }
     }
   }

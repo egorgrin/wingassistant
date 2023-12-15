@@ -1,15 +1,24 @@
 .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   line-height: 1;
   padding: 16px;
+  height: 51px;
+  width: 185px;
   background-color: $color-btn-bg;
+  border: 2px solid transparent;
   border-radius: $btn-radius;
-  font-weight: 400;
+  font-weight: 600;
+  text-transform: uppercase;
   color: #fff;
   text-align: center;
   transition: all .4s ease;
 
   &:hover,
   &:focus {
+    border-color: $color-btn-border-hover;
+    color: $color-btn-bg;
     background-color: $color-btn-bg-hover;
   }
 }

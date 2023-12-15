@@ -1,23 +1,28 @@
 <header>
   <div class="header container">
-    <div class="hamburger hidden">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+    <div class="alignment hidden"></div>
     <div class="logo_wrapper">
       <a href="/" class="logo">
         <img src="/assets/img/logo.webp" alt="">
       </a>
+      <a href="/" class="logo_mobile">
+        <img src="/assets/img/logo_mobile.webp" alt="">
+      </a>
     </div>
-    <nav class="desktop_nav">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/services">Services</a>
-        </li>
-      </ul>
-    </nav>
-    <a href="/contact" class="btn">Get started</a>
+    <div class="buttons">
+      <a href="#" class="btn">services</a>
+      <a href="#" class="btn">Get started</a>
+    </div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
-
+  <div class="mobile_nav">
+    <div class="buttons">
+      <a href="#" class="btn">services</a>
+      <a href="#" class="btn">Get started</a>
+    </div>
+  </div>
 </header>

@@ -2,10 +2,10 @@
   background: $color-bg-main;
 
   .hero.presentation {
-    padding-top: 100px;
-    padding-bottom: 0;
+    padding-top: 120px;
+    padding-bottom: 70px;
 
-    gap: 20px;
+    gap: 50px;
 
     @include screen($large) {
       align-items: flex-end;
@@ -13,27 +13,31 @@
       padding-bottom: 50px;
     }
     @include screen($medium) {
+      padding-top: 70px;
       align-items: center;
+      gap: 0px;
     }
 
     .text,
     .image {
-      min-height: 80vh;
-
       @include screen($large) {
         min-height: auto;
       }
     }
 
     .text {
-      flex-basis: 54%;
+      flex-basis: 50%;
     }
     .image {
-      flex-basis: 46%;
+      flex-basis: 50%;
     }
 
     .text {
-      padding-top: 90px;
+      padding-top: 15%;
+
+      @include screen($medium) {
+        padding-top: 0;
+      }
 
 
       h1 {
@@ -41,6 +45,10 @@
         margin-bottom: 20px;
 
         @include screen($large) {
+          font-size: 4.0rem;
+        }
+
+        @include screen($medium) {
           font-size: 3.0rem;
         }
       }
@@ -50,18 +58,8 @@
       }
 
       .btn {
-        width: 50%;
+        font-size: 1.6rem;
         margin-bottom: 30px;
-      }
-
-      .rating {
-        font-size: 1.4rem;
-        text-transform: uppercase;
-        color: $color-text-violet-gray;
-
-        i {
-          color: #FFAC33;
-        }
       }
     }
   }

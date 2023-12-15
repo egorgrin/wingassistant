@@ -3,27 +3,42 @@ header {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 100px;
+  height: 120px;
 
   top: 0;
   left: 0;
   z-index: 99;
 
-  transition: background .4s ease;
+  background-color: $color-bg-main;
+
+  transition: background .5s ease;
 
   //border-bottom: 1px solid #0000001a;
   // box-shadow: rgba(53, 80, 128, 0.2) 0px 0px 10px 1px;
 
+  @include screen($medium) {
+    height: 70px;
+  }
+
   .header {
     display: flex;
     align-items: center;
-    height: 100px;
+
+    &.container {
+      max-width: 1470px;
+    }
 
     .logo_wrapper {
+      display: flex;
       line-height: 1;
 
+      @include screen($large) {
+        flex-grow: 1;
+        justify-content: center;
+      }
+
       .logo {
-        width: 150px;
+        width: 262px;
 
         margin-right: 40px;
 
@@ -31,86 +46,112 @@ header {
           width: 100%;
         }
       }
+
+      .logo_mobile {
+        width: 30px;
+      }
     }
 
-    nav {
-      flex-grow: 1;
-      height: 100%;
+    .buttons {
+      display: flex;
+      margin-left: auto;
+      gap: 25px;
 
-      @include screen($medium) {
+      @include screen($large) {
         display: none;
       }
 
-      ul {
+      .btn {
         display: flex;
         align-items: center;
-        height: 100%;
+        justify-content: center;
+        height: 51px;
+        width: 185px;
 
-        li {
-          height: 100%;
+        font-weight: 600;
+        font-size: 1.6rem;
+        text-transform: uppercase;
 
-          a {
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            height: 100%;
+        &:first-of-type {
+          color: black;
+          border-color: $color-btn-border-hover;
+          background: $color-btn-bg-hover;
 
-            padding: 0 20px;
-
-            font-size: 1.5rem;
-            font-weight: 500;
-            color: $color-text-header;
-
-            &:hover, &:focus {
-              text-decoration: underline;
-            }
+          &:hover,
+          &:focus {
+            /*            border-color: $color-main;
+                        background-color: $color-btn-bg-hover;*/
           }
         }
       }
     }
+  }
 
-    .btn {
-      margin-left: auto;
+  .mobile_nav {
+    box-sizing: content-box;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 50%;
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    z-index: 9;
 
-      padding: 7px 24px;
+    background: white;
 
-      background-color: #fff;
-      color: $color-btn-bg;
+    transition: max-height 0.4s ease-out, opacity 0.3s ease-out;
 
-      border-radius: 4px;
+    &.opened {
+      border-bottom: 1px solid #0000001a;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      opacity: 1;
+    }
 
-      line-height: 2.8rem;
-      font-weight: 600;
-      font-size: 1.6rem;
-      text-transform: uppercase;
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0 40px;
+      gap: 20px;
 
-      &:hover,
-      &:focus {
-        background-color: $color-btn-bg-hover;
-        color: #fff;
+      .btn {
+        height: 51px;
+        width: 50%;
+        font-size: 1.4rem;
+
+
+        @include screen($medium) {
+          width: 90%;
+        }
       }
+
     }
   }
 
-  &.floating {
-    background: #ffffff;
+  .alignment, .hamburger, .logo_mobile {
+    display: none;
+  }
 
-    .header .btn {
-      color: #fff;
-      background: $color-btn-bg;
 
-      &:hover,
-      &:focus {
-        background-color: $color-btn-bg-hover;
-      }
+
+  .alignment, .hamburger {
+    flex-shrink: 0;
+    flex-basis: 5%;
+  }
+
+  @include screen($large) {
+    .alignment, .hamburger {
+      display: flex;
     }
   }
 
   @include screen($medium) {
-    .hamburger {
+    .logo {
+      display: none;
+    }
+    .logo_mobile {
       display: flex;
-
-      margin-right: 20px;
     }
   }
 }

@@ -5,6 +5,7 @@ $small: 'small';
 $medium: 'medium';
 $large: 'large';
 $x-large: 'x-large';
+$xx-large: 'xx-large';
 
 @mixin screen($width) {
   @if $width == $x-small {
@@ -26,6 +27,10 @@ $x-large: 'x-large';
     }
   }@else if $width == $x-large {
     @media (max-width: 1023px) {
+      @content;
+    }
+  }@else if $width == $xx-large {
+    @media (max-width: 1199px) {
       @content;
     }
   }

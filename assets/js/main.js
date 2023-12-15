@@ -6,40 +6,41 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const headerHeight = header.getBoundingClientRect().height.toFixed(0);
 
+  let scrolled = false;
+  let isOpened = false;
+
+
   window.onscroll = () => {
-    if (window.scrollY || document.documentElement.scrollTop > headerHeight) {
-      header.classList.add('floating')
+    scrolled = !!(window.scrollY || document.documentElement.scrollTop > headerHeight);
+    if (scrolled) {
+      header.style.backgroundColor = 'white';
     } else {
-      header.classList.remove('floating')
+      if(!isOpened) {
+        header.style.backgroundColor = '#EEEEFB';
+      }
     }
   };
 
+  burgerBtn.addEventListener('click', () => {
+    const headerHeight = header.getBoundingClientRect().height.toFixed(1);
+    const mobileNavHeight = mobileNav.scrollHeight.toFixed(1);
 
-  /*  function toggleMenu() {
-      const headerHeight = header.getBoundingClientRect().height.toFixed(1);
-      const mobileNavHeight = mobileNav.scrollHeight.toFixed(1);
+    mobileNav.classList.toggle('opened');
 
-      mobileNav.style.borderTop = '3px solid #F29100';
-      mobileNav.classList.toggle('opened');
+    isOpened = !isOpened;
 
-      const isOpened = mobileNav.classList.contains('opened');
+    header.style.backgroundColor = 'white';
 
-      mobileNav.style.maxHeight = isOpened ? `${mobileNavHeight}px` : '0px';
-      mobileNav.style.transform = isOpened
-        ? `translate(-50%, ${headerHeight}px)`
-        : '0px';
-      mobileNavBody.style.transform = isOpened
-        ? 'translateY(0)'
-        : 'translateY(-25%)';
 
-      if (!isOpened) {
-        setTimeout(() => {
-          mobileNav.style.borderTop = null;
-        }, 500);
-      }
+    if (!scrolled) {
+      header.style.backgroundColor = isOpened ? 'white' : '#EEEEFB';
     }
 
-    burgerBtn.addEventListener('click', toggleMenu);*/
+    mobileNav.style.maxHeight = isOpened ? `${mobileNavHeight}px` : '0px';
+    mobileNav.style.transform = isOpened
+        ? `translate(-50%, ${headerHeight}px)`
+        : '0px';
+  });
 
 
   function smoothScrollToForm(e) {
