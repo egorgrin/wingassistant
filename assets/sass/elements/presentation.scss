@@ -1,5 +1,20 @@
+.presentation_wrapper {
+  .title {
+    padding: 60px 20px;
+    text-align: center;
+    font-size: 34px;
+
+    @include screen($medium) {
+      font-size: 30px;
+      padding: 20px;
+    }
+  }
+
+}
+
 .presentation {
   display: flex;
+  justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 50px;
   gap: 5%;
@@ -7,6 +22,9 @@
   @include screen($medium) {
     flex-direction: column;
     align-items: center;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .text,
@@ -28,6 +46,7 @@
     }
   }
 
+
   .text {
     @include screen($medium) {
       order: 1;
@@ -35,7 +54,6 @@
       align-items: center;
       text-align: center;
     }
-
     ul {
       padding-left: 20px;
     }
@@ -46,7 +64,7 @@
     }
 
     p,
-    ul {
+    li {
       margin-bottom: 28px;
     }
 
@@ -59,9 +77,14 @@
     display: flex;
     align-items: center;
 
+    @include screen($large) {
+      justify-content: center;
+    }
+
     & img {
       object-fit: cover;
       object-position: center;
     }
   }
 }
+

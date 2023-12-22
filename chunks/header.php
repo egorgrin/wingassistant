@@ -10,7 +10,7 @@
       </a>
     </div>
     <div class="buttons">
-      <a href="#" class="btn">services</a>
+      <a href="/services" class="btn">services</a>
       <a href="#" class="btn">Get started</a>
     </div>
     <div class="hamburger">
@@ -21,7 +21,7 @@
   </div>
   <div class="mobile_nav">
     <div class="buttons">
-      <a href="#" class="btn">services</a>
+      <a href="/services" class="btn">services</a>
       <a href="#" class="btn">Get started</a>
     </div>
   </div>

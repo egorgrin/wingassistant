@@ -11,14 +11,19 @@ const CHUNKS = ROOT_PATH . 'chunks';
 <!doctype html>
 <html lang="en">
 
-  <?php include CHUNKS . '/head.php'?>
+<?php include CHUNKS . '/head.php' ?>
 
-  <?php
-  include ROOT_PATH . '/router/router.php';
-  ?>
+<?php
+include ROOT_PATH . '/router/router.php';
+?>
 
-  <?php include CHUNKS . '/footer.php'?>
+<?php include CHUNKS . '/footer.php' ?>
 </body>
+
+
+<script>
+  const current_page = document.querySelector('main').classList.value;
+</script>
 
 <script src="/assets/js/main.js"></script>
 

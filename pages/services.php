@@ -1,129 +1,192 @@
 <!-- Add page meta here -->
 
-<title>Home page</title>
+<title>Services</title>
 </head>
 
 <body>
-  <?php include CHUNKS . '/header.php'?>
+<?php include CHUNKS . '/header.php' ?>
 
-  <main class="services_page">
-    <section class="presentation_wrapper">
-      <div class="presentation pr_ltr container">
-        <div class="text">
-          <div>
-            <h2>Streamlining your Financial Administration</h2>
-            <p>Welcome to Avior Financials' Services Page, where we take pride in delivering comprehensive and tailored
-              financial solutions to optimize and streamline your business operations. Our expertise spans a range of
-              essential services, all designed to ensure the financial health and success of your enterprise.
-            </p>
-          </div>
-          <div>
-            <h3>Our Services</h3>
-            <p>From sending out invoices, processing and archiving purchase invoices to recording payments and
-              maintaining the entire administration, we gladly take on these tasks for you, ensuring that your financial
-              administration is well-organized.</p>
-            <ul>
-              <li>Streamline your invoicing process</li>
-              <li>Ensure accurate, professional, and timely invoice delivery</li>
-              <li>Handle the complexities of processing and archiving purchase invoices</li>
-              <li>Meticulous approach for accuracy and compliance</li>
-              <li>Record payments to stay on top of cash flow</li>
-              <li>Provide real-time insights into your financial position</li>
-              <li>Take care of your entire financial administration</li>
-              <li>Cover a wide range of administrative tasks to keep your operations running smoothly</li>
-              <li>Ensure timely submission of invoices and receipts to the accountant</li>
-              <li>Simplify and enhance your quotation processes</li>
-              <li>From creation to tracking, ensure a seamless experience for both you and your clients</li>
-            </ul>
+<main class="service_page">
+  <section class="hero_wrapper">
+    <div class="hero presentation container">
+      <div class="text">
+        <h1>Dedicated Social media Management</h1>
 
-            <a href="/contact" class="btn btn_gradient">Get in Touch</a>
-          </div>
+        <p>Unlock the full potential of your social media. We build and maintain your social media, creating posts,
+          reels, and videos that expand your reach, attract customers, and establish brand awareness.</p>
 
-        </div>
-        <div class="image">
-          <img src="/assets/img/services.svg" alt="">
-        </div>
+        <a href="#" class="btn">Get in Touch</a>
+
       </div>
-    </section>
-    <section class="adv_wrapper">
-      <div class="adv container">
-        <div class="title">
-          <h2>Experience the Avior Financials Advantage</h2>
-        </div>
-        <div class="items">
-          <div class="item">
-            <div class="img_container">
-              <img src="/assets/img/advant1.svg" alt="">
+      <div class="image">
+        <img src="/assets/img/services/s_hero.webp" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="matter presentation_wrapper">
+    <h2 class="title container">Do things that matter and leave social media to Social Typhon</h2>
+
+    <div class="presentation container">
+
+      <div class="text">
+        <p>At Social Typhon, we specialize in the management of your social media presence. Our dedicated team crafts
+          compelling content tailored to the unique landscapes of Instagram and TikTok.</p>
+        <p>From concept to posting, we take care of the entire process, ensuring your brand shines across social
+          platforms. With Social Typhon, your social media presence is not just managed; it's optimized for success.
+        </p>
+
+        <ul>
+          <li>Dedicated Instagram and TikTok Specialists</li>
+          <li>Targeted Reach</li>
+          <li>Efficiency in Execution</li>
+          <li>Tailored Content Strategy</li>
+        </ul>
+
+      </div>
+      <div class="image">
+        <img src="/assets/img/services/s_pres_1.webp" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="how grid_wrapper">
+    <div class="grid container">
+      <h2 class="title">How Social Typhon helps their clients</h2>
+      <div class="items">
+        <div class="item">
+          <div class="text">
+            <div
+              class="subtitle_wrapper"
+              style="background: #EEEEFB"
+            >
+              <div class="subtitle">Content creation</div>
             </div>
-            <h3>Expertise</h3>
-            <p>Our team of seasoned professionals brings extensive experience in financial management to ensure accuracy
-              and compliance.</p>
+            <p>We're all about creating eye-catching stuff – cool visuals, snappy captions, and content that's totally
+              in sync with what's trending, especially on Instagram and TikTok where your audience hangs out.</p>
           </div>
-          <div class="item">
-            <div class="img_container">
-              <img src="/assets/img/advant2.svg" alt="">
+        </div>
+        <div class="item">
+          <div class="text">
+            <div
+              class="subtitle_wrapper"
+              style="background: #FFF3F2"
+            >
+              <div class="subtitle">Schedule and Manage Content Calendar</div>
             </div>
-            <h3>Customized Solutions</h3>
-            <p>We understand that every business is unique. Our solutions are tailored to meet your specific needs,
-              providing a personalized approach to financial management.</p>
+            <p>We'll handle the nitty-gritty of planning and organizing your content calendar, making sure your posts
+              hit the right spots at the right times to get people talking about your brand.</p>
           </div>
-          <div class="item">
-            <div class="img_container">
-              <img src="/assets/img/advant3.svg" alt="">
+        </div>
+        <div class="item">
+          <div class="text">
+            <div
+              class="subtitle_wrapper"
+              style="background: #E8E8E8"
+            >
+              <div class="subtitle">Report and Analytics</div>
             </div>
-            <h3>Reliability</h3>
-            <p>Trust is at the core of our relationships. We pride ourselves on delivering reliable and timely services,
-              allowing you to focus on your business with peace of mind.</p>
-          </div>
-
-
-        </div>
-      </div>
-    </section>
-    <section class="presentation_wrapper">
-      <div class="presentation pr_rtl container">
-        <div class="image">
-          <img src="/assets/img/service1.svg" alt="">
-        </div>
-        <div class="text">
-          <div>
-            <h2>More time for Important matters</h2>
-            <p>With our back office support, we take care of all the burdens, allowing you to focus on what you truly enjoy. This minimizes your risk significantly, and in addition, we assist you in growing and earning more money.
-            </p>
+            <p>Dive into the numbers game with us. Our tools help you figure out what's working and what's not, so you
+              can make smart choices based on how your social media efforts are really performing.</p>
           </div>
         </div>
-
-      </div>
-      <div class="presentation pr_ltr container">
-        <div class="text">
-          <div>
-            <h2>100% Transparency in everything we do
-            </h2>
-            <p>We are dedicated to helping you grow and increase your income. We achieve this through collaboration, knowledge sharing, time savings, and convenience. Our competitive pricing and cutting-edge software also contribute to our support.
-            </p>
+        <div class="item">
+          <div class="text">
+            <div
+              class="subtitle_wrapper"
+              style="background: #FFEFE2"
+            >
+              <div class="subtitle">Manage All Social Profiles</div>
+            </div>
+            <p>Juggling multiple social profiles? No worries, we've got it covered. We'll keep everything in line, so
+              your brand's personality stays consistent across the social media board.</p>
           </div>
         </div>
-        <div class="image">
-          <img src="/assets/img/service2.webp" alt="">
-        </div>
-      </div>
-      <div class="presentation pr_rtl container">
-        <div class="image">
-          <img src="/assets/img/service3.svg" alt="">
-        </div>
-        <div class="text">
-          <div>
-            <h2>Get the best service and quality</h2>
-            <p>Consider us an extension of your business. A dedicated team is always ready to assist you and ensure the satisfaction of both employees and temporary staff. This is only possible through effective teamwork. We are available for you 24/7. This is what we define as personal commitment.
-            </p>
+        <div class="item">
+          <div class="text">
+            <div
+              class="subtitle_wrapper"
+              style="background: #EBF2E1"
+            >
+              <div class="subtitle">Reel and Video Production</div>
+            </div>
+            <p>Ready to take your social media game to the next level? We'll craft attention-grabbing reels and videos
+              that showcase your brand in the best light possible, from brainstorming the idea to making it visually pop
+              – all shareable and ready to boost your online presence.</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why grid_wrapper">
+    <div class="grid container">
+      <h2 class="title"> Why Social Typhon</h2>
+      <div class="items">
+        <div class="item">
+          <div class="text">
+            <div class="subtitle">Dedicated Instagram and TikTok Specialists</div>
+            <p>Social Typhon boasts a team of specialists with in-depth knowledge and experience in Instagram and TikTok
+              marketing. By focusing on these key platforms, we can provide specialized expertise, keeping up with the
+              unique dynamics and algorithms of each platform to maximize your brand's visibility and impact in these
+              highly popular social media spaces.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="text">
+            <div class="subtitle">Targeted Reach</div>
+            <p>We understand the nuances of Instagram and TikTok, tailoring content to maximize your visibility and
+              engage with your specific audience.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="text">
+            <div class="subtitle">Efficiency in Execution</div>
+            <p>The fast-paced nature of social media demands agility. Social Typhon ensures your content is not only
+              top-notch but also delivered promptly, keeping you ahead in the digital game.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="text">
+            <div class="subtitle">Tailored Content Strategy</div>
+            <p>Social Typhon excels in crafting personalized content strategies for each client. By understanding the
+              unique identity and goals of your brand, we create posts, reels, and videos that not only resonate with
+              your target audience but also boost your reach and engagement on platforms like Instagram and TikTok.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about presentation_wrapper">
+    <h2 class="title container">About Social Typhon</h2>
+
+    <div class="presentation container">
+
+      <div class="text">
+        <h2>Tailored Solutions for Your Unique Brand</h2>
+
+        <p>In the dynamic realm of social media, the demand for compelling content and captivating posts has never been more pronounced. Navigating this ever-changing landscape requires a partner who can seamlessly craft and maintain your online presence, ensuring increased reach, customer attraction, and heightened brand awareness.</p>
+        <p>At Social Typhon, we specialize in curating content for two of the most influential platforms - Instagram and TikTok. From captivating Instagram Stories to impactful YouTube branding, we've got it all covered. Our dedicated team is committed to building and sustaining your social media persona through engaging posts, enticing reels, and attention-grabbing videos.</p>
 
       </div>
-    </section>
-    <?php
-      $heading = "Ready to get started?";
-      $paragraph = "Contact Avior Financials today to discuss how our expert financial services can benefit your business. Whether you're a small startup or a growing enterprise, we have the solutions to take your financial management to the next level.";
-      include CHUNKS . '/form.php'
-      ?>
-  </main>
+      <div class="image">
+        <img src="/assets/img/services/s_pres_2.webp" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="cta presentation_wrapper">
+    <div class="presentation container">
+      <div class="text">
+        <h2>Let’s work together! </h2>
+        <p> Find out how we can help you Elevate your Social Presence</p>
+        <a href="#" class="btn">Get in touch</a>
+      </div>
+      <div class="image">
+        <img src="/assets/img/services/s_pres_3.webp" alt="">
+      </div>
+    </div>
+  </section>
+
+</main>

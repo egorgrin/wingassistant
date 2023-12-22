@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (scrolled) {
       header.style.backgroundColor = 'white';
     } else {
-      if(!isOpened) {
+      if (!isOpened) {
         header.style.backgroundColor = '#EEEEFB';
       }
     }
@@ -61,66 +61,69 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   (function accordion() {
-    const elements = document.querySelectorAll('.accordion .element');
+    if (current_page === 'home_page') {
 
-    function expand(el, body, btn) {
-      body.style.display = 'block';
-      body.style.maxHeight = body.scrollHeight + 'px';
-      body.style.marginTop = '2rem';
+      const elements = document.querySelectorAll('.accordion .element');
 
-      el.classList.add('expanded');
+      function expand(el, body, btn) {
+        body.style.display = 'block';
+        body.style.maxHeight = body.scrollHeight + 'px';
+        body.style.marginTop = '2rem';
 
-      body.addEventListener('transitionend', () => {
-        btn.style.transform = 'scaleY(-1)';
-      }, {
-        once: true,
-      });
-    }
+        el.classList.add('expanded');
 
-    function collapse(el, body, btn) {
-      body.style.maxHeight = null;
-      body.style.marginTop = '0';
+        body.addEventListener('transitionend', () => {
+          btn.style.transform = 'scaleY(-1)';
+        }, {
+          once: true,
+        });
+      }
 
-      el.classList.remove('expanded');
+      function collapse(el, body, btn) {
+        body.style.maxHeight = null;
+        body.style.marginTop = '0';
 
-      body.addEventListener('transitionend', () => {
-        body.style.display = 'none';
-        btn.style.transform = 'scaleY(1)';
-      }, {
-        once: true, // This ensures the event listener fires only once
-      });
-    }
+        el.classList.remove('expanded');
 
-    (function expandFirst() {
-      const topEl = elements[0];
+        body.addEventListener('transitionend', () => {
+          body.style.display = 'none';
+          btn.style.transform = 'scaleY(1)';
+        }, {
+          once: true, // This ensures the event listener fires only once
+        });
+      }
 
-      const body = topEl.querySelector('.accordion_content');
-      const btn = topEl.querySelector('.expand_btn');
-      expand(topEl, body, btn);
-    })();
+      (function expandFirst() {
+        const topEl = elements[0];
 
-    elements.forEach((element, clickedIndex) => {
+        const body = topEl.querySelector('.accordion_content');
+        const btn = topEl.querySelector('.expand_btn');
+        expand(topEl, body, btn);
+      })();
 
-      const body = element.querySelector('.accordion_content');
-      const btn = element.querySelector('.expand_btn');
+      elements.forEach((element, clickedIndex) => {
 
-      element.addEventListener('click', () => {
-        console.log(`clickedIndex = ${clickedIndex}`);
-        if (body.style.display === 'none' || body.style.display === '') {
-          expand(element, body, btn);
-          elements.forEach((element, i) => {
-            if (clickedIndex !== i) {
-              const body = element.querySelector('.accordion_content');
-              const btn = element.querySelector('.expand_btn');
-              if (body.style.display === 'block') {
-                collapse(element, body, btn);
+        const body = element.querySelector('.accordion_content');
+        const btn = element.querySelector('.expand_btn');
+
+        element.addEventListener('click', () => {
+          console.log(`clickedIndex = ${clickedIndex}`);
+          if (body.style.display === 'none' || body.style.display === '') {
+            expand(element, body, btn);
+            elements.forEach((element, i) => {
+              if (clickedIndex !== i) {
+                const body = element.querySelector('.accordion_content');
+                const btn = element.querySelector('.expand_btn');
+                if (body.style.display === 'block') {
+                  collapse(element, body, btn);
+                }
               }
-            }
-          });
-        } else if (body.style.display === 'block') {
-          collapse(element, body, btn);
-        }
+            });
+          } else if (body.style.display === 'block') {
+            collapse(element, body, btn);
+          }
+        });
       });
-    });
+    }
   })();
 });

@@ -1,6 +1,6 @@
 <!-- Add page meta here -->
 
-<title>Home page</title>
+<title>Services</title>
 </head>
 
 <body>

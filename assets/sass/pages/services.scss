@@ -1,0 +1,160 @@
+.service_page {
+  .matter.presentation_wrapper {
+    .presentation {
+      .text {
+        padding: 60px 0;
+        color: $color-text-main;
+
+        @include screen($large) {
+          padding: 0;
+        }
+
+        ul {
+          padding: 0;
+          text-align: left;
+
+          li {
+            position: relative;
+            list-style: none;
+            padding-left: 30px;
+
+            @include screen($small) {
+              font-size: 11px;
+            }
+
+            &::before {
+              position: absolute;
+              content: '';
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%);
+              width: 20px;
+              height: 20px;
+              background-image: url("/assets/img/arr.webp");
+              background-size: cover;
+
+              @include screen($medium) {
+                width: 15px;
+                height: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .how.grid_wrapper .grid {
+    .item {
+      box-shadow: 0px 14px 30px 0px rgba(232, 232, 232, 0.5);
+      border-radius: 14px;
+      //border: 1px solid red;
+
+      .text {
+        .subtitle_wrapper {
+          height: 320px;
+          text-align: center;
+          padding: 0 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          @include screen($medium) {
+            height: 250px;
+          }
+
+          .subtitle {
+            margin: 0;
+            display: inline-block;
+
+            @include screen($small) {
+              font-size: 2rem;
+            }
+          }
+        }
+
+        p {
+          padding: 30px;
+
+          @include screen($small) {
+            padding: 10px;
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  .why.grid_wrapper {
+    background: $color-bg-pink;
+
+    .items {
+      grid-template-columns: repeat(2, 1fr);
+
+      @include screen($x-large) {
+        grid-template-columns: 100%
+      }
+
+      .item {
+
+        box-shadow: 0px 22px 80px 0px rgba(234, 212, 210, 0.69);
+        border-radius: 14px;
+        background: #fff;
+        padding: 60px;
+
+        @include screen($medium) {
+          padding: 40px 20px;
+        }
+
+        .subtitle {
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+
+  }
+
+  .about.presentation_wrapper {
+    .presentation {
+      .text {
+        h2 {
+          margin: 45px 0;
+          font-size: 2.4rem;
+        }
+      }
+    }
+  }
+
+  .cta.presentation_wrapper {
+    background-image: url("/assets/img/services/serv_cta_bg.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .presentation {
+      padding-top: 130px;
+      padding-bottom: 130px;
+
+      .text {
+        color: white;
+
+        h2 {
+          margin: 45px 0;
+          font-size: 5.4rem;
+
+          @include screen($xx-large) {
+            font-size: 3.4rem;
+          }
+        }
+      }
+
+      .image {
+        max-width: 420px;
+        justify-content: center;
+      }
+    }
+
+
+  }
+}

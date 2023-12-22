@@ -19,14 +19,13 @@ header {
   @include screen($medium) {
     height: 70px;
   }
+  .container {
+    max-width: 1470px;
+  }
 
   .header {
     display: flex;
     align-items: center;
-
-    &.container {
-      max-width: 1470px;
-    }
 
     .logo_wrapper {
       display: flex;
